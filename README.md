@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/CocktailJS/cocktail-annotation-evented.png?branch=master)](https://travis-ci.org/CocktailJS/cocktail-annotation-evented)
+
+
 # cocktail-annotation-evented
 ## A [CocktailJS](http://cocktailjs.github.io) Annotation Extension
 
