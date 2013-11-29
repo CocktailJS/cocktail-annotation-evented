@@ -28,6 +28,9 @@ MyClass.js
 var cocktail = require('cocktail'),
     Evented  = require('cocktail-annotation-evented');
 
+//register Evented annotation with current cocktail instance
+cocktail.use(Evented);
+
 cocktail.mix({
     '@exports': module
     '@as'     : 'class',
