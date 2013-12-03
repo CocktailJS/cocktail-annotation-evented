@@ -61,6 +61,6 @@ obj.doSomething();
 ### API
 
 - `@evented: parameter`
-    - **parameter**: {boolean|Object} if the parameter is `true`, the evented annotation will create and add a new instance of node's `events.EventEmitter`. You can as well specify your own EventEmitter instance as a parameter.
+    - **parameter**: {boolean} if the parameter is `true`, the evented annotation will create and add a new instance of node's `events.EventEmitter`.
 
 

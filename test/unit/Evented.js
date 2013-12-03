@@ -20,7 +20,7 @@ describe('Evented Annotation', function(){
 
         it('should add emitter as property in Class', function(){
             expect(MyClass).to.respondTo('getEmitter');
-            expect(MyClass.prototype.emitter).to.be.instanceOf(EventEmitter);
+            expect(MyClass.prototype.getEmitter()).to.be.instanceOf(EventEmitter);
         });
 
         it('should add eventable trait methods', function(){
@@ -55,27 +55,5 @@ describe('Evented Annotation', function(){
         });
     });    
 
-    describe('@evented: emitter adds the instance and apply the Eventable trait to the given class', function(){
-        var sut = new Evented(),
-            emitter = new EventEmitter(),
-            MyClass = function(){};
 
-        sut.setParameter(emitter);
-        sut.process(MyClass);
-
-        it('should add emitter as property in Class', function(){
-            expect(MyClass).to.respondTo('getEmitter');
-            expect(MyClass.prototype.emitter).to.be.instanceOf(EventEmitter);
-            expect(MyClass.prototype.emitter).to.be.equal(emitter);
-        });
-
-        it('should add eventable trait methods', function(){
-
-            expect(MyClass).to.respondTo('on');
-            expect(MyClass).to.respondTo('emit');
-            expect(MyClass).to.respondTo('addListener');
-            expect(MyClass).to.respondTo('removeListener');
-
-        });
-    });
 });
