@@ -1,6 +1,6 @@
 {
   "name": "cocktail-annotation-evented",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "CocktailJS Custom Annotation Evented",
   "main": "lib/Evented",
   "scripts": {
@@ -17,7 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "cocktail": "~0.5.0",
-    "cocktail-trait-eventable": "0.0.3"
+    "cocktail-trait-eventable": "0.0.4"
   },
   "devDependencies": {
     "grunt-simple-mocha": "~0.4.0",
